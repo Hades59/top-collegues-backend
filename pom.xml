@@ -52,6 +52,13 @@
 				<jdbc.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</jdbc.dialect>
 				<jdbc.connections.max.active>2</jdbc.connections.max.active>
 			</properties>
+			<dependencies>
+				<dependency>
+					<groupId>mysql</groupId>
+					<artifactId>mysql-connector-java</artifactId>
+					<version>5.1.6</version>
+				</dependency>
+			</dependencies>
 		</profile>
 	</profiles>
 
@@ -85,7 +92,6 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-jpamodelgen</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>
